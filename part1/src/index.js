@@ -28,7 +28,6 @@ const App = () => {
       <Hello name={name} age={age}/>,
       <Hello name={name} age="15"/>,
       <footer/> /*Usada de una manera, como resultado se vera el componente*/,
-      {Footer()} /*Usada de otra manera, como resultado se vera el codigo html*/,
     </>
     
   )
