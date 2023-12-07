@@ -9,7 +9,12 @@ const Hello = (props) => {
   )
 }
 
-const footer = () => {
+const sum = (p1, p2) =>{
+  console.log(p1)
+  console.log(p2)
+  return p1+p2
+}
+const Footer = () => {
   return (
     <div>
       greeting app created by 
@@ -27,10 +32,13 @@ const App = () => {
       <Hello name="Alison" age={12+3}/>,
       <Hello name={name} age={age}/>,
       <Hello name={name} age="15"/>,
-      <footer/> /*Usada de una manera, como resultado se vera el componente*/,
+      <Footer/> [Usada de una manera, como resultado se vera el componente*]
     </>
     
-  )
+    )
+    const result = sum(15,23)
+    console.log(result)
 }
+
 
 ReactDOM.render(<App/>, document.getElementById('root')) 
